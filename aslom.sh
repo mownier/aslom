@@ -25,7 +25,7 @@ if [[ $1 == "help" ]] || [[ $1 == "" ]]; then
     echo "       Should be greater than or equal to the value of -f argument."
     echo "  -o : The output directory."
     echo "  -i : An option whether to get only the images or convert to pdf. "
-    echo "       Value is either 0 or 1. 0 for image only, 1 for converting to pdf."
+    echo "       Value is either 1 or 0. 1 for image only, 0 for converting to pdf."
     echo ""
     echo "  example:"
     echo "    $ ./aslom.sh -s fairy-tail -f 400 -l 545 -o ~/Desktop -i 1"
