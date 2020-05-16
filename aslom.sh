@@ -55,7 +55,7 @@ if [[ $min == "" ]] || [[ $min -eq 0 ]] || [[ $min < 0 ]]; then
     exit 1
 fi
 
-if [[ $max != "" ]] && [[ $max < $min ]]; then
+if [[ $max != "" ]] && [[ $max -lt $min ]]; then
     echo "maximum chapter should be greater than or equal to minimum"
     exit 1
 else
