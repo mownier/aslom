@@ -58,7 +58,7 @@ get_chapters() {
         wget --quiet -O $fn ${urls[$i]}
     done
 
-    rm $output_dir/*.html
+    # rm $output_dir/*.html
 }
 
 slug_name=$1
