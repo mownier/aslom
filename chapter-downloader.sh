@@ -16,14 +16,16 @@ get_chapters() {
     do
         local url=""
         if [ $i -eq 1 ]; then
-            url="http://www.mangareader.net/$slug/$chapter"
+            # url="http://www.mangareader.net/$slug/$chapter"
+            url="http://www.mangapanda.com/$slug/$chapter"
         else
-            url="http://www.mangareader.net/$slug/$chapter/$i"
+            # url="http://www.mangareader.net/$slug/$chapter/$i"
+            url="http://www.mangapanda.com/$slug/$chapter/$i"
         fi
 
         local file="$output_dir/$i.html"
         curl --silent -o $file $url
-        
+
         if grep -q "404 Not Found" $file; then
             rm $file
             break
