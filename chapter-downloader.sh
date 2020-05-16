@@ -39,6 +39,7 @@ get_chapters() {
             local n=$(basename $f .html)
             local back=${line#*"src=\""}
             local url=${back%*"\" alt"*}
+            echo $url
             local i=$((n-1))
             urls[$i]=$url
         fi
