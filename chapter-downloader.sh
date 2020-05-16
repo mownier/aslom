@@ -55,7 +55,7 @@ get_chapters() {
             fn="$output_dir/00$page.jpg"
         fi
         echo $fn
-        curl --silent -o $fn ${urls[$i]}
+        wget --quiet -O $fn ${urls[$i]}
     done
 
     rm $output_dir/*.html
